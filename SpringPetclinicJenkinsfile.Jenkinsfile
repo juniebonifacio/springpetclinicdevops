@@ -11,7 +11,7 @@ node('master')
             env.GIT_COMMIT = scmVars.GIT_COMMIT
             echo "env.GIT_COMMIT"
             echo "${env.GIT_COMMIT}"
-    	      def name = "${env.Docker_Repo_Url}/spring-petclinic"  ## "env.Docker_Repo_Url  is stored in Jenkins => Manage Jenkins => configure system => Environment variables"
+    	      // def name = "${env.Docker_Repo_Url}/spring-petclinic"  ## "env.Docker_Repo_Url  is stored in Jenkins => Manage Jenkins => configure system => Environment variables"
     	      def version = "${env.BUILD_NUMBER}"
             echo "${name}"
             echo "${version}"
